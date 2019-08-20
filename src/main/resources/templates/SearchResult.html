@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="border:1px solid black;">
+    <span th:text="${result.word}" ></span>
+    <table>
+    <tr th:each="message : ${result.meaningList}">
+        <td>:</td>
+        <td th:text="${message}"></td>
+    </tr>
+    </table>
+</div>
+</body>
+</html>
